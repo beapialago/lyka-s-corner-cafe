@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order - Lyka's Corner Cafe</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Lyka's Corner Cafe</h1>
+        <p>Order Form</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="order.html">Order</a>
+    </nav>
+
+    <main>
+
+        <h2>Place Your Order</h2>
+
+        <form action="order-confirmation.html" method="get">
+
+            <label for="name">Full Name:</label>
+            <br>
+            <input type="text"
+                   id="name"
+                   name="name"
+                   required>
+            <br><br>
+
+
+            <label for="email">Email:</label>
+            <br>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   required>
+            <br><br>
+
+
+            <label for="phone">Phone Number:</label>
+            <br>
+            <input type="tel"
+                   id="phone"
+                   name="phone"
+                   pattern="[0-9]{11}"
+                   placeholder="09123456789"
+                   required>
+            <br><br>
+
+
+            <label for="drink">Choose a Drink or Treat:</label>
+            <br>
+
+            <select id="drink" name="drink" required>
+
+                <option value="">Choose one</option>
+                <option value="latte">Cafe Latte</option>
+                <option value="caramel">Caramel Macchiato</option>
+                <option value="spanish">Spanish Latte</option>
+                <option value="white-mocha">White Mocha</option>
+                <option value="iced-americano">Iced Americano</option>
+                <option value="strawberry-matcha">Strawberry Matcha</option>
+                <option value="cookies">Cookies</option>
+                <option value="cheesecake">Cheesecake</option>
+                <option value="chocolate-cake">Chocolate Cake</option>
+                <option value="dubai-chewy-cookie">Dubai Chewy Cookie</option>
+                <option value="pudding">Pudding</option>
+                <option value="waffle">Waffle</option>
+                <option value="pancake">Pancake</option>
+
+            </select>
+
+            <br><br>
+
+
+            <label for="quantity">Quantity:</label>
+            <br>
+
+            <input type="number"
+                   id="quantity"
+                   name="quantity"
+                   min="1"
+                   max="10"
+                   required>
+
+            <br><br>
+
+
+            <label>Choose Size:</label>
+            <br>
+
+            <input type="radio"
+                   id="small"
+                   name="size"
+                   value="small"
+                   required>
+
+            <label for="small">Small</label>
+
+            <br>
+
+            <input type="radio"
+                   id="medium"
+                   name="size"
+                   value="medium">
+
+            <label for="medium">Medium</label>
+
+            <br>
+
+            <input type="radio"
+                   id="large"
+                   name="size"
+                   value="large">
+
+            <label for="large">Large</label>
+
+            <br><br>
+
+
+            <label>Add-ons:</label>
+            <br>
+
+            <input type="checkbox"
+                   id="cream"
+                   name="addons"
+                   value="cream">
+
+            <label for="cream">Whipped Cream</label>
+
+            <br>
+
+            <input type="checkbox"
+                   id="caramel"
+                   name="addons"
+                   value="caramel">
+
+            <label for="caramel">Caramel Syrup</label>
+
+            <br>
+
+            <input type="checkbox"
+                   id="espresso"
+                   name="addons"
+                   value="espresso">
+
+            <label for="espresso">Extra Espresso</label>
+
+            <br><br>
+
+
+            <label for="time">Pickup Time:</label>
+            <br>
+
+            <input type="time"
+                   id="time"
+                   name="time"
+                   required>
+
+            <br><br>
+
+
+            <label for="message">Special Instructions:</label>
+            <br>
+
+            <textarea id="message"
+                      name="message"
+                      rows="5"
+                      cols="30"
+                      maxlength="200"></textarea>
+
+            <br><br>
+
+
+            <input type="submit" value="Submit Order">
+
+        </form>
+
+        <br>
+
+        <a href="index.html">Back to Home</a>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Lyka's Corner Cafe</p>
+    </footer>
+
+</body>
+</html>
